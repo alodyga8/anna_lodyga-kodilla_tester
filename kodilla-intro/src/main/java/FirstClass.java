@@ -1,11 +1,31 @@
+import javax.swing.*;
+
 public class FirstClass {
     public static void main(String[] args) {
         System.out.println("Hello from FirstClass!");
 
-        if (1 > 2){
-            System.out.println("Niesamowite! Jeden jest większe niż dwa!!!");
-        } else {
-            System.out.println("Wszystko po staremu, jeden jest mniejsze niż dwa.");
-        }
+        Notebook notebook = new Notebook(600, 600, 2020);
+//        System.out.println("notebook.weight: " + notebook.weight);
+//        System.out.println("notebook.price: " + notebook.price);
+        System.out.println(notebook.weight + " " + notebook.price + " " + notebook.year);
+        notebook.checkPrice();
+        notebook.checkWeight();
+        notebook.checkYearAndPrice();
+
+        Notebook heavyNotebook = new Notebook(2000, 1400, 2023);
+//        System.out.println("heavyNotebook.weight: " + heavyNotebook.weight);
+//        System.out.println("heavyNotebook.price: " + heavyNotebook.price);
+        System.out.println(heavyNotebook.weight + " " + heavyNotebook.price + " " + heavyNotebook.year);
+        heavyNotebook.checkPrice();
+        heavyNotebook.checkWeight();
+
+        Notebook oldNotebook = new Notebook(1200, 450, 2015);
+//        System.out.println("oldNotebook.weight: " + oldNotebook.weight);
+//        System.out.println("oldNotebook.price: " + oldNotebook.price);
+        System.out.println(oldNotebook.weight + " " + oldNotebook.price + " " + oldNotebook.year);
+        oldNotebook.checkPrice();
+        oldNotebook.checkWeight();
+//        System.out.println(notebook.weight + " " + notebook.price + " " + heavyNotebook.price);
     }
-}
+
+    }
