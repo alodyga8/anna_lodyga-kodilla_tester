@@ -8,7 +8,6 @@ public class FirstClass {
 //        System.out.println("notebook.weight: " + notebook.weight);
 //        System.out.println("notebook.price: " + notebook.price);
         System.out.println(notebook.weight + " " + notebook.price + " " + notebook.year);
-        notebook.checkPrice();
         notebook.checkWeight();
         notebook.checkYearAndPrice();
 
@@ -16,15 +15,15 @@ public class FirstClass {
 //        System.out.println("heavyNotebook.weight: " + heavyNotebook.weight);
 //        System.out.println("heavyNotebook.price: " + heavyNotebook.price);
         System.out.println(heavyNotebook.weight + " " + heavyNotebook.price + " " + heavyNotebook.year);
-        heavyNotebook.checkPrice();
         heavyNotebook.checkWeight();
+        heavyNotebook.checkYearAndPrice();
 
         Notebook oldNotebook = new Notebook(1200, 450, 2015);
 //        System.out.println("oldNotebook.weight: " + oldNotebook.weight);
 //        System.out.println("oldNotebook.price: " + oldNotebook.price);
         System.out.println(oldNotebook.weight + " " + oldNotebook.price + " " + oldNotebook.year);
-        oldNotebook.checkPrice();
         oldNotebook.checkWeight();
+        oldNotebook.checkYearAndPrice();
 //        System.out.println(notebook.weight + " " + notebook.price + " " + heavyNotebook.price);
     }
 
