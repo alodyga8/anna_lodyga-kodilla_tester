@@ -14,6 +14,7 @@ public class FirstClass2 {
 
         car1.accelerate(-40);
         System.out.println(car1.speed);
+
     }
 }
 
